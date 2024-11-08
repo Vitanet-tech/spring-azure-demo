@@ -34,7 +34,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v3
       with:
-          app-name: 'java-springboot-app'
+          app-name: 'java-springboot-app-test'
           publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
           package: '${{ github.workspace }}/target/*.jar'
 
